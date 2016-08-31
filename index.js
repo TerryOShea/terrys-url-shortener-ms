@@ -10,7 +10,7 @@ app.get('/', function(req, res) {
             console.log(err);
             res.status(err.status).end();
         }
-    })
+    });
 });
 
 var shortened;
