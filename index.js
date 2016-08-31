@@ -22,12 +22,15 @@ app.get('/:item', function(req, res) {
         res.redirect(longurl);
     }
     else if (validUrl.isWebUri(item) != undefined) {
+        res.json({
+            original_url: item
+        });
         longurl = item;
         shortened = (Math.floor(Math.random()*1000) + 1).toString();
-        res.json({
+        /*res.json({
             original_url: item,
             //short_url: 'https://terrys-url-shortener.herokuapp.com/' + shortened
-        });
+        });*/
     }
     else {
         res.json({
