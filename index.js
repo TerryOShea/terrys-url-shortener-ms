@@ -23,7 +23,7 @@ app.get('/:item', function(req, res) {
     }
     else if (validUrl.isWebUri(item) != undefined) {
         longurl = item;
-        shortened = Math.floor(Math.random()*1000) + 1;
+        shortened = (Math.floor(Math.random()*1000) + 1).toString();
         res.json({
             original_url: item,
             short_url: 'comname/' + shortened
