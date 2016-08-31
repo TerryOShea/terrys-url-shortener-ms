@@ -26,7 +26,7 @@ app.get('/:item', function(req, res) {
         shortened = (Math.floor(Math.random()*1000) + 1).toString();
         res.json({
             original_url: item,
-            short_url: 'https://terrys-url-shortener.herokuapp.com/' + shortened
+            //short_url: 'https://terrys-url-shortener.herokuapp.com/' + shortened
         });
     }
     else {
