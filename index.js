@@ -9,7 +9,7 @@ var currNum = 999;
 
 function numGen() {
     currNum++;
-    return String('/' + currNum);
+    return String(currNum);
 };
 
 app.use(bodyParser.urlencoded({extended: true}))
