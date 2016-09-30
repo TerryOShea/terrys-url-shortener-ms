@@ -64,11 +64,9 @@ MongoClient.connect('mongodb://terryoshea:pojkentalarinte@ds047146.mlab.com:4714
                         long_url: longUrl, 
                         short_url: process.env.APP_URL + numGen()
                     };
+                    res.json(urlInfo);
                     db.collection('urls').save(urlInfo, (err, result) => {
     		            if (err) return console.log(err);
-    		            else {
-    		                res.json(urlInfo);
-    		            }
                     })
                 }
                 else {
