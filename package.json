@@ -10,7 +10,10 @@
   "author": "Terry O'Shea <terrykoshea@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "mongodb": "^2.2.10",
+    "path": "^0.12.7",
     "valid-url": "^1.0.9"
   }
 }
